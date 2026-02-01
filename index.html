@@ -2,19 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Listina & Marcos | Wedding After Party</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0b0b0b;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1px;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url("images/hero.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero .subtitle {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 14px;
+      color: #d1bfa7;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 10px;
+    }
+
+    .hero .date {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    /* PROLOG */
+    .prologue {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #e6e6e6;
+    }
+
+    .prologue span {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    /* DETAILS */
+    .details {
+      background: #120909;
+    }
+
+    .details h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .names {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .info {
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      gap: 25px;
+    }
+
+    .info strong {
+      color: #d1bfa7;
+      letter-spacing: 1px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #d1bfa7;
+      font-style: italic;
+    }
+
+    /* GALLERY */
+    .gallery h2 {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    /* EPILOG */
+    .epilogue {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #e6e6e6;
+    }
+
+    .epilogue span {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="overlay"></div>
     <div class="hero-content">
       <p class="subtitle">Wedding After Party</p>
       <h1>Listina & Marcos</h1>
@@ -22,22 +172,46 @@
     </div>
   </section>
 
-  <!-- EVENT DETAILS -->
+  <!-- PROLOG -->
+  <section class="prologue">
+    <span>The vows have been spoken, the promises sealed — and now, the night truly begins.</span>
+    <span>
+      Join us as champagne flows, music takes over, and love is celebrated under the city lights.
+      This is not just an after party, but a celebration of passion, freedom, and a love bold enough
+      to dance through the night.
+    </span>
+  </section>
+
+  <!-- DETAILS -->
   <section class="details">
     <h2>Celebrate With Us</h2>
+
     <p class="names">
-      Listina Hanandita, S.Hub.Int <br>
-      & <br>
+      Listina Hanandita, S.Hub.Int<br>
+      &<br>
       Marcos Silva De Campos
     </p>
 
     <div class="info">
-      <p><strong>Date</strong><br>Sunday, April 19, 2026</p>
-      <p><strong>Venue</strong><br>
-        Ludo Sports Kitchen and Coffee <br>
+      <p>
+        <strong>Date</strong><br>
+        Sunday, April 19, 2026
+      </p>
+
+      <p>
+        <strong>Time</strong><br>
+        6.00 PM – 11.00 PM<br>
+        <span class="note">As the night unfolds, the celebration continues.</span>
+      </p>
+
+      <p>
+        <strong>Venue</strong><br>
+        Ludo Sports Kitchen and Coffee<br>
         Kiara Artha Park, Bandung
       </p>
-      <p><strong>Dress Code</strong><br>
+
+      <p>
+        <strong>Dress Code</strong><br>
         Maroon · Navy · Black
       </p>
     </div>
@@ -52,9 +226,21 @@
     </div>
   </section>
 
+  <!-- EPILOG -->
+  <section class="epilogue">
+    <span>
+      As the night deepens and the music lingers, we are reminded that moments like these
+      are meant to be shared.
+    </span>
+    <span>
+      Thank you for raising a glass with us, for celebrating love, and for turning this after party
+      into memories we will carry forever.
+    </span>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    <p>We look forward to celebrating with you 🤍</p>
+    We look forward to celebrating with you 🥂
   </footer>
 
 </body>
